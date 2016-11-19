@@ -1,0 +1,14 @@
+.header {
+  text-align:center;
+  background-color:darkgrey;
+  height: 100px;
+}
+.header h1 {
+  padding-top: 25px;
+}
+
+.content {
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
