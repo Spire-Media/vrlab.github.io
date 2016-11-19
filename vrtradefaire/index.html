@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>VR Tradefaire</title>
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  
+  
+  
+  
+</head>
+
+<body>
+  <a-scene id="world">
+
+
+  <a-assets>
+    <img id="my-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Checkerboard_pattern.svg/1024px-Checkerboard_pattern.svg.png">
+  </a-assets>
+  <a-entity position="0 1 0">
+    <a-entity position="0 0 0">
+      <a-box color="darkorange" width="4" height="10" depth="2" position="0 0 2" rotation="0 0 0" scale="1 0.05 1"></a-box>
+      <a-entity text="text: SPIRE" material="color:black" position="-1 1 2"></a-entity>
+      <a-box color="#A1887F" width="4" height="10" depth="2" position="-1 -1 2" rotation="0 0 0" scale="0.1 0.15 1"> </a-box>
+      
+      <a-box color="#A1887F" width="4" height="10" depth="2" position="1 -1 2" rotation="0 0 0" scale="0.1 0.15 1"> </a-box>
+        
+    </a-entity>
+
+    <a-entity position="3 0 3">
+      <a-box color="darkorange" rotation="0 90 0" width="4" height="10" depth="2" position="0 0 2" scale="1 0.05 1"></a-box>
+
+      <a-entity text="text: Flyers" rotation="0 -90 0" material="color:black" position="0 1 1"></a-entity>
+      <a-entity position = "0 -1 2" rotation = "0 90 0">
+        <a-box color="#A1887F" width="4" height="10" depth="2" position="-1 0 0" rotation="0 0 0" scale="0.1 0.15 1"> </a-box>
+
+        <a-box color="#A1887F" width="4" height="10" depth="2" position="1 0 0" rotation="0 0 0" scale="0.1 0.15 1"> </a-box>
+      </a-entity>
+    </a-entity>
+
+    <a-entity position="-3 0 3">
+      <a-box color="darkorange" rotation="0 90 0" width="4" height="10" depth="2" position="0 0 2" scale="1 0.05 1"></a-box>
+
+      <a-entity text="text: Advertising" rotation="0 90 0" material="color:black" position="0 1 4"></a-entity>
+      
+      
+      <a-entity position = "0 -1 2" rotation = "0 90 0">
+        <a-box color="#A1887F" width="4" height="10" depth="2" position="-1 0 0" rotation="0 0 0" scale="0.1 0.15 1"> </a-box>
+
+        <a-box color="#A1887F" width="4" height="10" depth="2" position="1 0 0" rotation="0 0 0" scale="0.1 0.15 1"> </a-box>
+      </a-entity>
+    </a-entity>
+  </a-entity>
+
+  <a-plane id="floor" position="0 0 5" color="#4E342E" rotation="-90 0 0" height="20" width="20"></a-plane>
+  <a-entity id="clouds" position="0 10 0">
+    <a-entity id="firstcloudset" position="0 0 0">
+      <!-- Clouds -->
+      <a-entity position="0 0 0">
+        <!--Cloud 1-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="6 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="-3 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+    </a-entity>
+
+    <a-entity position="-10 0 0">
+      <!-- Clouds -->
+      <a-entity position="0 0 0">
+        <!--Cloud 1-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="6 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="-3 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+    </a-entity>
+
+    <a-entity position="10 0 0">
+      <!-- Clouds -->
+      <a-entity position="0 0 0">
+        <!--Cloud 1-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="6 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="-3 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+    </a-entity>
+
+    <!-- Second Cloud set -->
+
+    <a-entity id="secondcloudset" position="0 0 10">
+      <!-- Clouds -->
+      <a-entity position="0 0 0">
+        <!--Cloud 1-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="6 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="-3 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+    </a-entity>
+
+    <a-entity position="-10 0 0">
+      <!-- Clouds -->
+      <a-entity position="0 0 0">
+        <!--Cloud 1-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="6 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="-3 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+    </a-entity>
+
+    <a-entity position="10 0 0">
+      <!-- Clouds -->
+      <a-entity position="0 0 0">
+        <!--Cloud 1-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="6 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="-3 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+    </a-entity>
+    <!-- Third Cloud set -->
+    <a-entity id="thirdcloudset" position="0 0 -10">
+      <!-- Clouds -->
+      <a-entity position="0 0 0">
+        <!--Cloud 1-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="6 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="-3 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+    </a-entity>
+
+    <a-entity position="-10 0 0">
+      <!-- Clouds -->
+      <a-entity position="0 0 0">
+        <!--Cloud 1-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="6 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="-3 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+    </a-entity>
+
+    <a-entity position="10 0 0">
+      <!-- Clouds -->
+      <a-entity position="0 0 0">
+        <!--Cloud 1-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="6 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+      <a-entity position="-3 0 5">
+        <!--Cloud 2-->
+        <a-sphere position="2 0 2" color="lightgray" radius="2"></a-sphere>
+        <a-sphere position="1 0 3" color="lightgray" radius="2"></a-sphere>
+        <a-sphere color="lightgray" radius="2"></a-sphere>
+      </a-entity>
+
+    </a-entity>
+  </a-entity>
+  <a-sky color="lightblue"></a-sky>
+
+</a-scene>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
