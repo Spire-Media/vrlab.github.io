@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
   <meta charset="UTF-8">
   <title>forest experiment</title>
-  
+
   <script src="js/aframe.min.js"></script>
   <script src="js/aframe-sun-sky.min.js"></script>
-  
+
+  <script src = "src/main.js"></script>
+
 </head>
 
 <body>
+
   <a-scene>
-  <a-assets>
-    <a-asset-item id="tree" src="https://s3.amazonaws.com/gurivr/23f1972f-99c6-4f68-a0f0-392c16a02333-trees.dae"></a-asset-item>
-  </a-assets>
-  <a-entity collada-model="#tree"></a-entity>
-  <a-entity camera position = "0 0.5 0" wasd-controls look-controls>
-    <a-entity cursor="fuse: true; fuseTimeout: 500"
-            position="0 0 -1"
-            scale = "0.05 0.05 1"
-            geometry="primitive: ring"
-            material="color: black;
-                      shader: flat">
-  </a-entity>
-  </a-entity>
-  <a-plane position="0 0 0" rotation="-90 0 0" width="30" height="30" color="#005C09"></a-plane>
-  <a-sun-sky material="sunPosition: -0.2 3 -4"></a-sun-sky>
-  
-</a-scene>
-  
-  
+    <a-assets>
+      <a-asset-item id="tree" src="https://s3.amazonaws.com/gurivr/23f1972f-99c6-4f68-a0f0-392c16a02333-trees.dae"></a-asset-item>
+    </a-assets>
+    <a-entity collada-model="#tree"></a-entity>
+    <a-entity id = "camera" camera position="0 0.5 0" wasd-controls look-controls>
+      <a-cursor fuse = "true"></a-cursor>
+    </a-entity>
+    <a-plane position="0 0 0" rotation="-90 0 0" width="30" height="30" color="#005C09"></a-plane>
+    <a-sun-sky material="sunPosition: -0.2 3 -4"></a-sun-sky>
+
+    <a-entity id = "teleports">
+      <a-cylinder class = "teleporter" cursor-listener color="teal" height="0.1" radius="0.25"></a-cylinder>
+      <a-cylinder class = "teleporter" cursor-listener color="teal" position = "-3 0 0" height="0.1" radius="0.25"></a-cylinder>
+      <a-cylinder class = "teleporter" cursor-listener color="teal" position = "3 0 -2" height="0.1" radius="0.25"></a-cylinder>
+    </a-entity>
+
+  </a-scene>
+
 </body>
+
 </html>
